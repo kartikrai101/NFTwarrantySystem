@@ -1,0 +1,8 @@
+.container{
+    z-index: 99;
+    position: fixed;
+    margin-left: 8%;
+    margin-top: 1%;
+    outline: 1px solid rgb(232, 232, 232);
+    padding: 30px;
+}

@@ -16,6 +16,7 @@
 
 .productLink:hover{
     color: #256de1;
+    cursor: pointer;
 }
 
 .ratingAndReviews{

@@ -10,8 +10,8 @@ import classes from './ProductItemsList.module.css'; // importing the css classe
 const products = [
     {
         src: img1,
+        id: 'p1laptopDesign',
         alt: "This is the first product of list",
-        link: 'https://www.flipkart.com/hp-core-i3-11th-gen-8-gb-256-gb-ssd-windows-11-home-14s-dy2506tu-thin-light-laptop/p/itm6e9f19b41d9c9?pid=COMG92FXHPYEN44H&lid=LSTCOMG92FXHPYEN44HKXQR8G&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_84753c85-b189-4a08-a6a1-3b5d4c31becc_17_ABTXC9653TK1_MC.COMG92FXHPYEN44H&ppt=clp&ppn=laptops-store&ssid=qjgrw8p6sw0000001657813377330&otracker=clp_pmu_v2_Design%2BContent%2B%2526%2BLaptops_1_17.productCard.PMU_V2_HP%2BCore%2Bi3%2B11th%2BGen%2B-%2B%25288%2BGB%252F256%2BGB%2BSSD%252FWindows%2B11%2BHome%2529%2B14s-%2Bdy2506TU%2BThin%2Band%2BLight%2BLaptop_laptops-store_COMG92FXHPYEN44H_neo%2Fmerchandising_0&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Design%2BContent%2B%2526%2BLaptops_LIST_productCard_cc_1_NA_view-all&cid=COMG92FXHPYEN44H',
         itemText: 'HP Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) 14s dy25...',
         rating: '4.3',
         reviews: '1,598',
@@ -24,7 +24,7 @@ const products = [
     {
         src: img2,
         alt: "This is the second product of list",
-        link:'https://www.flipkart.com/lenovo-core-i3-10th-gen-8-gb-512-gb-ssd-windows-11-home-15iml05-thin-light-laptop/p/itmab4180a00a50b?pid=COMG9VHHUTKFZFMU&lid=LSTCOMG9VHHUTKFZFMUR7XP3V&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_84753c85-b189-4a08-a6a1-3b5d4c31becc_17_ABTXC9653TK1_MC.COMG9VHHUTKFZFMU&ppt=clp&ppn=laptops-store&ssid=qjgrw8p6sw0000001657813377330&otracker=clp_pmu_v2_Design%2BContent%2B%2526%2BLaptops_2_17.productCard.PMU_V2_Lenovo%2BCore%2Bi3%2B10th%2BGen%2B-%2B%25288%2BGB%252F512%2BGB%2BSSD%252FWindows%2B11%2BHome%2529%2B15IML05%2BThin%2Band%2BLight%2BLaptop_laptops-store_COMG9VHHUTKFZFMU_neo%2Fmerchandising_1&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Design%2BContent%2B%2526%2BLaptops_LIST_productCard_cc_2_NA_view-all&cid=COMG9VHHUTKFZFMU',
+        id: 'p2laptopDesign',
         itemText: 'Lenovo Core i3 10th Gen - (8 GB/512 GB SSD/Windows 11 Hom...',
         rating: '4.3',
         reviews: '230',
@@ -36,7 +36,7 @@ const products = [
     {
         src: img3,
         alt: "This is the third product of list",
-        link: 'https://www.flipkart.com/lenovo-ideapad-3-core-i3-11th-gen-8-gb-512-gb-ssd-windows-11-home-82h801l7in-82h802fjin-82h802l3in-82h801lhin-thin-light-laptop/p/itm0e009f57a591b?pid=COMG9VHHG6Q3RRJX&lid=LSTCOMG9VHHG6Q3RRJXQHPK6Q&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_84753c85-b189-4a08-a6a1-3b5d4c31becc_17_ABTXC9653TK1_MC.COMG9VHHG6Q3RRJX&ppt=clp&ppn=laptops-store&ssid=qjgrw8p6sw0000001657813377330&otracker=clp_pmu_v2_Design%2BContent%2B%2526%2BLaptops_3_17.productCard.PMU_V2_Lenovo%2BIdeaPad%2B3%2BCore%2Bi3%2B11th%2BGen%2B-%2B%25288%2BGB%252F512%2BGB%2BSSD%252FWindows%2B11%2BHome%2529%2B82H801L7IN%2B%257C%2B82H802FJIN%2B%257C%2B82H802L3IN%2B%257C%2B82H801LHIN%2BThin%2Band%2BLight%2BLaptop_laptops-store_COMG9VHHG6Q3RRJX_neo%2Fmerchandising_2&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Design%2BContent%2B%2526%2BLaptops_LIST_productCard_cc_3_NA_view-all&cid=COMG9VHHG6Q3RRJX',
+        id: 'p3laptopDesign',
         itemText: 'Lenovo IdeaPad 3 Core i3 11th Gen - (8 GB/512 GB SSD/Windows 11 H...',
         rating: '4.3',
         reviews: '901',
@@ -88,12 +88,18 @@ const products = [
 ];
 
 const ProductItemList1 = (props) => {
+
+    const viewProductHandler = () => {
+
+    };
+
     return(
         <div className={classes.container1}>
             <ProductItem 
                 src={products[0].src}
                 alt={products[0].alt}
-                link={products[0].link}
+                id={products[0].id}
+                link={`/flipkart/${products[0].id}`}
                 itemText={products[0].itemText}
                 rating={products[0].rating}
                 reviews={products[0].reviews}
@@ -101,11 +107,13 @@ const ProductItemList1 = (props) => {
                 originalPrice={products[0].originalPrice}
                 off={products[0].off}
                 altPrice={products[0].altPrice}
+                onClick = {viewProductHandler}
             />
             <ProductItem 
                 src={products[1].src}
                 alt={products[1].alt}
-                link={products[1].link}
+                id={products[1].id}
+                link={`/flipkart/${products[1].id}`}
                 itemText={products[1].itemText}
                 rating={products[1].rating}
                 reviews={products[1].reviews}
@@ -113,11 +121,13 @@ const ProductItemList1 = (props) => {
                 originalPrice={products[1].originalPrice}
                 off={products[1].off}
                 altPrice={products[1].altPrice}
+                onClick = {viewProductHandler}
             />
             <ProductItem 
                 src={products[2].src}
                 alt={products[2].alt}
-                link={products[2].link}
+                id={products[2].id}
+                link={`/flipkart/${products[2].id}`}
                 itemText={products[2].itemText}
                 rating={products[2].rating}
                 reviews={products[2].reviews}
@@ -125,6 +135,7 @@ const ProductItemList1 = (props) => {
                 originalPrice={products[2].originalPrice}
                 off={products[2].off}
                 altPrice={products[2].altPrice}
+                onClick = {viewProductHandler}
             />
             <ProductItem 
                 src={products[3].src}

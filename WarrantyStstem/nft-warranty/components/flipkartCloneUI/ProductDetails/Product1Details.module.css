@@ -1,0 +1,48 @@
+.buyadd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99;
+    width: 580px;
+}
+
+.outermostContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.greyLinks{
+    display: flex;
+    color: #757575;
+    font-size: 12px;
+}
+
+.greyLinks:hover{
+    color: #256de1;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+}
+
+.linkList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compareAndShare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftNode{
+    
+}
+
+.rightNode{
+    width: 58%;
+}
+

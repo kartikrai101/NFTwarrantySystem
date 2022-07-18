@@ -1,10 +1,16 @@
 import classes from './ProductItem.module.css'; // importing the CSS style classes
-
+import {useRouter} from 'next/router'; // importing the useRouter hook
 import Image from 'next/image'; // importing the image component
 
 import GoldCoin from '../Icons/goldCoin.svg'; // importing the gold coin image from the icons
 
 const ProductItem = (props) => {
+
+    const router = useRouter(); // initializing the useRouter hook
+
+    function loadDetailsPageHandler(){
+        router.push('/flipkart/' + props.id); 
+    };  
 
     return(
             <div>
@@ -18,9 +24,9 @@ const ProductItem = (props) => {
                     />
                 </div>
                 <div className={classes.productLink}>
-                    <a href={props.link}>
+                    <span onClick={loadDetailsPageHandler}>
                         {props.itemText}
-                    </a>
+                    </span>
                 </div>
                 <div className={classes.ratingAndReviews}>
                     <span>

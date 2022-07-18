@@ -15,45 +15,52 @@ const Flipkart = (props) => {
     return(
         <Fragment className={classes.background}>
             <Header />
-            <Categories />
+            <br/>
+            <br/>
+            <br/>
+            <main>
+                <Categories />
+                
+                <h3 className={classes.header2}>Laptops & Desktops</h3>
+                <Paragraph />
+
+                <Banner />
+                <div className={classes.header2Container}>
+                    <span><p className={classes.header2}>Design Content & Laptops</p></span>
+                    <span><Button /></span>
+                </div>
+                <hr className={classes.line} />
+
+                <div className={classes.outerContainer}>
+                    <ProductItemList1 />
+                </div>
+                <br />
+                <br />
+                <hr className={classes.line} />
+                <div className={classes.header2Container}>
+                    <span><p className={classes.header2}>Gaming Laptops</p></span>
+                    <span><Button /></span>
+                </div>
+                <hr className={classes.line} />
+
+                <div className={classes.outerContainer}>
+                    <ProductItemList2 />
+                </div>
+                <br />
+                <br />
+                <hr className={classes.line} />
+                <div className={classes.header2Container}>
+                    <span><p className={classes.header2}>Gaming Laptops</p></span>
+                    <span><Button /></span>
+                </div>
+                <hr className={classes.line} />
+
+                <div className={classes.outerContainer}>
+                    <ProductItemList3 />
+                </div>
+            </main>
+
             
-            <h3 className={classes.header}>Laptops & Desktops</h3>
-            <Paragraph />
-
-            <Banner />
-            <div className={classes.header2Container}>
-                <span><p className={classes.header2}>Design Content & Laptops</p></span>
-                <span><Button /></span>
-            </div>
-            <hr className={classes.line} />
-
-            <div className={classes.outerContainer}>
-                <ProductItemList1 />
-            </div>
-            <br />
-            <br />
-            <hr className={classes.line} />
-            <div className={classes.header2Container}>
-                <span><p className={classes.header2}>Gaming Laptops</p></span>
-                <span><Button /></span>
-            </div>
-            <hr className={classes.line} />
-
-            <div className={classes.outerContainer}>
-                <ProductItemList2 />
-            </div>
-            <br />
-            <br />
-            <hr className={classes.line} />
-            <div className={classes.header2Container}>
-                <span><p className={classes.header2}>Gaming Laptops</p></span>
-                <span><Button /></span>
-            </div>
-            <hr className={classes.line} />
-
-            <div className={classes.outerContainer}>
-                <ProductItemList3 />
-            </div>
             
             
         </Fragment>
