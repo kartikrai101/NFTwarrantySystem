@@ -5,6 +5,8 @@ import image from './Images/product101.webp';
 import classes from './Product1Details.module.css'; // importing the css classes
 import ProductSubImages from '../ProductDetails/UIComponents/ProductSubImages';
 import Buttons from './UIComponents/Buttons';
+import Image from 'next/image';
+import flipkartAssured from '../Icons/flipkartAssured.png'; 
 
 const Product1Details = (props) => {
     return(
@@ -43,25 +45,45 @@ const Product1Details = (props) => {
                             <div className={classes.compareAndShare}>
                                 <span>
                                     <input type="checkbox" id="compare" />
-                                    <label forHtml="compare">Compare</label>
-                                </span>
-                                <span>
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">kar
-                                            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-                                        </svg>
-                                    </span>
-                                    <span>
-                                        <p>Share</p>
-                                    </span>   
+                                    <label for="compare" className={classes.compare}>Compare</label>
                                 </span>
 
                             </div>
                             
                         </div>
 
-                        <div>
-
+                        <div className={classes.productTitle}>
+                            <p>{props.title}</p>
+                            <div className={classes.row3}>
+                                <span>
+                                    <button className={classes.ratingBtn}>
+                                        {props.rating}
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                    </button>
+                                </span>
+                                <span className={classes.ratingsAndReviews}>
+                                    {props.ratingsAndReviews}
+                                </span>
+                                <span className={classes.flipImage}>
+                                    <Image src={flipkartAssured} alt={'flipkartAssured'}
+                                            layout="intrinsic" width={77} height={21}
+                                    />
+                                </span>
+                            </div>
+                            <p className={classes.off}>Extra ₹{props.off} off</p>
+                            <div className={classes.pricing}>
+                                <span className={classes.price}>
+                                    ₹{props.price}
+                                </span>
+                                <span className={classes.wrongPrice}>
+                                    <strike>₹{props.wrongPrice}</strike>
+                                </span>
+                                <span className={classes.percentageOff}>
+                                    {props.percentageOff}% off
+                                </span>
+                            </div>
                         </div>
                         
                     </div>

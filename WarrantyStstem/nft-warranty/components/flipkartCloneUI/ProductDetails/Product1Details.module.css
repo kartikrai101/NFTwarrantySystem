@@ -36,6 +36,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 150px;
+}
+
+.compare{
+    padding: 8px;
+}
+
+.productTitle{
+    margin: 0px;
+    padding: 0px;
+    font-size: 19px;
+}
+
+.ratingBtn{
+    background-color: rgb(21, 126, 21);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 7px;
+    margin-right: 5px;
+}
+
+.ratingsAndReviews{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.row3{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.off{
+    color:rgb(21, 126, 21);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pricing{
+    display: flex;
+    justify-content: start;
+}
+
+.price{
+    font-size: 25px;
+}
+
+.wrongPrice{
+
+}
+
+.percentageOff{
+
+}
+
+.flipImage{
+    padding: 7px;
 }
 
 .leftNode{
