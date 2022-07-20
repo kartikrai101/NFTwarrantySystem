@@ -17,6 +17,7 @@ const ProductDetails = (props) => {
                 price={'36,990'}
                 wrongPrice={'48,933'}
                 percentageOff={24}
+                reducedPrice={'36,890'}
             />
         </div>
     );

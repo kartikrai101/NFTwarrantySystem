@@ -7,6 +7,10 @@ import ProductSubImages from '../ProductDetails/UIComponents/ProductSubImages';
 import Buttons from './UIComponents/Buttons';
 import Image from 'next/image';
 import flipkartAssured from '../Icons/flipkartAssured.png'; 
+import GoldCoin from '../Icons/goldCoin.svg';
+import greenTag1 from '../Icons/greenTag1.webp'; //importing the first green tag logo
+import greenTag2 from '../Icons/greenTag2.webp';
+import hpLogo from '../Icons/hpLogo.webp'; // importing the hp logo here
 
 const Product1Details = (props) => {
     return(
@@ -84,13 +88,128 @@ const Product1Details = (props) => {
                                     {props.percentageOff}% off
                                 </span>
                             </div>
-                        </div>
+
+                            <div className={classes.orBuyAt}>
+                                <span>Or Pay ₹{props.reducedPrice} + <Image src={GoldCoin} alt="gold" layout="intrinsic" width={15} height={15} />100</span>
+                            </div>
+
+                            <div>
+                                <p className={classes.couponsHead}>Coupons for you</p>
+                                
+                                    <span className={classes.partnerOffer}>
+                                        <Image src={greenTag1} alt={"greenTag1"} 
+                                            layout="fixed" width={20} height={18}
+                                        />  
+                                        <p className={classes.partner}>Partner Offer &nbsp;</p>
+                                        <p className={classes.partnerPara}>Purchase now & get a surprise cashback coupon for the Big Billion Days Sale 2022 &nbsp;</p>
+                                        <p className={classes.partnerLink}>Know More</p>
+                                    </span>
+                            </div>
+
+                            <div className={classes.availableOffers}>
+                                <p className={classes.head}>Available Offers</p>
+                                <div className={classes.offer1}>
+                                        <Image className={classes.offer_image} src={greenTag2} alt={"greenTag2"} 
+                                            layout="fixed" width={18} height={15}
+                                        />
+                                        <p className={classes.offer_firstWord}>Bank Offer &nbsp;</p>
+                                        <p className={classes.offer_text}>5% Cashback on Flipkart Axis Bank Card&nbsp;</p>
+                                        <p className={classes.offer_link}>T&C</p>
+                                </div>
+                                <div className={classes.offer2}>
+                                        <Image className={classes.offer_image} src={greenTag2} alt={"greenTag2"} 
+                                            layout="fixed" width={18} height={15}
+                                        />
+                                        <p className={classes.offer_text}>&nbsp; &nbsp;Extra 10% Off on Gaming Headset &nbsp;</p>
+                                        <p className={classes.offer_link}>T&C</p>
+                                </div>
+                                <div className={classes.offer3}>
+                                        <Image src={greenTag2} alt={"greenTag2"} 
+                                            layout="fixed" width={18} height={15}
+                                        />
+                                        <p className={classes.offer_firstWord}>Special Price &nbsp;</p>
+                                        <p className={classes.offer_text}>Get extra ₹2000 off (price inclusive of discount) &nbsp;</p>
+                                        <p className={classes.offer_link}></p>
+                                </div>
+                                <div className={classes.viewMoreDiv}>
+                                    <p className={classes.viewMore}>View 11 More Offers</p>
+                                </div>
+                            </div>
+
+                            <div className={classes.warrantyAndHighlights}>
+                                <div className={classes.warranty}>
+                                    <Image
+                                        className={classes.hpImage}
+                                        src={hpLogo}
+                                        alt={"hpLogo"}
+                                        layout="fixed"
+                                        width={60}
+                                        height={30}
+                                    />
+                                    <span className={classes.warrantyText}>
+                                        <p>1 Year Onsite Warranty &nbsp;</p>
+                                        <p className={classes.warranty_link}>Know More</p>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+
+                            <div className={classes.delivery_highlights_seller}>
+                                <div className={classes.box1}>
+                                    <div className={classes.box1_row1}>
+                                        <div>
+                                            <p className={classes.delivery_grey}>Delivery</p>
+                                        </div>
+                                        <div className={classes.theOtherPart}>
+                                            <span className={classes.pin}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                                
+                                            </svg>
+                                            &nbsp;
+                                            110086
+                                            </span>
+                                            <span className={classes.change}>
+                                                Change
+                                            </span>
+                                            <hr color="#256de1" />
+                                        </div>        
+                                    </div>
+                                    <div className={classes.delivery_row1}>
+                                        <p>Delivery in 2 Days, Friday &nbsp;</p>
+                                        <p className={classes.greyLine}>| &nbsp;</p>
+                                        <p className={classes.greenLink}>Free ₹40</p>
+                                    </div>
+                                    <div className={classes.delivery_row2}>
+                                        <p>Installation & Demo by 04 Aug, Sunday &nbsp;</p>
+                                        <p className={classes.greyLine}>| &nbsp;</p>
+                                        <p>₹749</p>
+                                    </div>
+                                    <div className={classes.viewDetails}>
+                                        View Details
+                                    </div>
+                                </div>
+
+                                <div className={classes.highlights}>
+                                    <div className={classes.highlights_box1}>
+                                        <p className={classes.highlights_head}>Highlights</p>
+                                    </div>
+
+                                    <div className={classes.highlights_box2}>
+                                        <ul>
+                                            <li>Stylish & Portable Thin and Light Laptop</li>
+                                            <li>14 inch Full HD, IPS Brightview,micro-edge,WLED- Backlit, Brightness: 250 nits, 157 ppi, Color Gamut: 45%NTSC</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         
                     </div>
                     
 
 
 
+                </div>
                 </div>
             </main>
             

@@ -6,6 +6,13 @@
     width: 580px;
 }
 
+.buttons{
+  z-index: 99;
+  position: fixed;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
 .outermostContainer{
     display: flex;
     justify-content: space-between;
@@ -80,25 +87,218 @@
 
 .pricing{
     display: flex;
-    justify-content: start;
+    justify-content:space-between;
+    align-items: center;
+    width: 260px; 
 }
 
 .price{
-    font-size: 25px;
-    font-weight: 
+    font-size: 28px;
+    font-weight: 650;
 }
 
 .wrongPrice{
-
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
 }
 
 .percentageOff{
-
+    font-size: 16px;
+    color: rgb(21, 126, 21);
+    font-weight: 700;
 }
 
 .flipImage{
     padding: 7px;
 }
+
+.orBuyAt{
+    font-size: 15px;
+}
+
+.couponsHead{
+    font-size: 16px;
+    font-weight: 520;
+}
+
+.partnerOffer{
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.partner{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.partnerLink{
+    color: #256de1;
+    font-weight: 600;
+}
+.partnerLink:hover{
+    cursor: pointer;
+}
+
+.head{
+    font-size: 16px;
+    font-weight: 520;
+}
+
+.offer1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer2{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer3{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer_firstWord{
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+
+.offer_text{
+    font-size: 14px;
+}
+
+.offer_link{
+    color: #256de1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.offer_link:hover{
+    cursor: pointer;
+}
+
+.viewMoreDiv{
+    height: 20px;
+}
+
+.viewMore{
+    color: #256de1;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hpImage{
+    border: 1px solid #757575;
+}
+
+.warrantyAndHighlights{
+    margin-top: 10px;
+}
+
+.warranty{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.warrantyText{
+    display: flex;
+    margin-left: 45px;
+}
+
+.warranty_link{
+    color: #256de1;
+    font-weight: 500;
+
+}
+
+.box1_row1{
+    display: flex;
+    align-items: center;
+}
+
+.theOtherPart{
+    margin-left: 45px;    
+}
+
+.delivery_grey{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.change{
+    margin-left: 140px;
+    font-size: 14px;
+    color: #256de1;
+    font-weight: 500;
+}
+
+.pin{
+    font-weight: 500px;
+    font-size: 14px;
+}
+
+.delivery_row1{
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+    font-size: 13px;
+    height: 20px;
+    font-weight: 600;
+}
+
+.greyLine{
+    color:hsl(0, 0%, 46%);
+}
+
+.greenLink{
+    color:rgb(21, 126, 21);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.delivery_row2{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 12%;
+    height: 20px;
+}
+
+.viewDetails{
+    color: #256de1;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 12%;
+    margin-top: 8px;
+}
+
+.highlights{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.highlights_box1{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
 
 .leftNode{
     
