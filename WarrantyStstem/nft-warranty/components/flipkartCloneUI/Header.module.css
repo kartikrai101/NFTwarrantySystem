@@ -5,7 +5,27 @@
     background-color: #2874f0;
     position: fixed;
     z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}
+
 
 .header input{
     height: 35px;
@@ -44,3 +64,60 @@
 .header a:hover{
     cursor: pointer;
 }
+
+.header_left{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    align-items: center;
+    margin-left: 6%;
+}
+
+.header_search{
+    background-color: white;
+    height: 35px;
+    width: 570px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header_searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.header_searchText{
+    color: grey;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.header_searchIcon{
+    color:#256de1;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.header_right{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    color: white;
+    margin-right: 10%;
+    font-weight: 500;
+}
+
+.header_right_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_right_item:hover{
+    cursor: pointer;
+}
+

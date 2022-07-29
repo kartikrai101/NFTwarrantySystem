@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "date-and-time": "^2.4.1",
+    "mongodb": "^4.8.1",
     "next": "12.2.2",
+    "nextjs-cors": "^2.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "timer-node": "^5.0.6"
   },
   "devDependencies": {
     "eslint": "8.19.0",

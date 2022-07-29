@@ -27,12 +27,16 @@
 }
 
 .ratingBtn{
-    background-color: rgb(21, 126, 21);
+    background-color: rgb(45, 150, 45);
     color: white;
     border-radius: 3px;
     border: none;
-    padding: 1px 9px;
     margin-right: 5px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
 }
 
 .reviews{

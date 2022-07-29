@@ -1,6 +1,6 @@
 import {Fragment} from 'react'; // importing Fragment component from react library
 import classes from './index.module.css'; // importing the CSS style classes
-
+import {useRouter} from 'next/router';
 import Header from '../../components/flipkartCloneUI/Header'; // importing flipkart header
 import Categories from '../../components/flipkartCloneUI/Categories';
 import Paragraph from '../../components/flipkartCloneUI/UI/paragraphText'; // importing the paragraph text 
@@ -11,15 +11,38 @@ import ProductItemList1 from '../../components/flipkartCloneUI/ProductItemLists/
 import ProductItemList2 from '../../components/flipkartCloneUI/ProductItemLists/ProductItemsList2';
 import ProductItemList3 from '../../components/flipkartCloneUI/ProductItemLists/ProductItemsList3';
 
+import {MongoClient} from 'mongodb'; 
+
 const Flipkart = (props) => {
+
+    const flipkartUser = props.userData;
+
+    const router = useRouter();
+
+    function redirectHandler(){
+        router.push('/flipkart/userId/digitalWarranties' );
+    }
+
     return(
-        <Fragment className={classes.background}>
+        <div className={classes.background}>
             <Header />
             <br/>
             <br/>
             <br/>
             <main>
-                <Categories />
+                <div className={classes.digitalWarrantyBox}>
+                    <div className={classes.categories}>
+                        <Categories />
+                    </div>
+                    <div className={classes.warrantiesBtn}>
+                        <div onClick={redirectHandler} className={classes.btnContainer}>
+                            <div className={classes.warrantyButton}>
+                                My Warranties
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 
                 <h3 className={classes.header2}>Laptops & Desktops</h3>
                 <Paragraph />
@@ -63,8 +86,43 @@ const Flipkart = (props) => {
             
             
             
-        </Fragment>
+        </div>
     );
 };
+
+export async function getServerSideProps(){
+
+    const testUser = {
+        userId: 'k1012r908#21',
+        username: 'kart1012ai',
+        personalDetails: {
+            contact: '8690625956',
+            email: 'kitrakiar73@gmail.com',
+            f_name: 'Kartik',
+            l_name: 'Rai',
+            address: 'Balaji Boys PG, Begumpur, 110086, Rohini, New Delhi'
+        }
+    };
+
+    const client = await MongoClient.connect('mongodb+srv://kartik:kartik@cluster0.aklsa.mongodb.net/nft?retryWrites=true&w=majority');
+    const db = client.db();
+
+    const collection = db.collection('flipkart_user');
+
+    const deletionPreviousDocuments = await collection.deleteOne({username: 'kart1012ai'});
+    const response = await collection.insertOne(testUser);
+
+    client.close();
+
+    return(
+        {
+            props: {
+                userData: {
+
+                }
+            }
+        }
+    );
+}
 
 export default Flipkart;

@@ -1,0 +1,385 @@
+.header{
+    background-color: #3b68d7;
+    
+}
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}
+
+.grey{
+    background-color: #EDF0F4;
+}
+
+
+.master_container{
+    background-color: #EDF0F4;
+    display: flex;
+}
+
+.col1{
+    width: 64%;
+}
+
+.col2{
+    width: 34%;
+}
+
+.box1{
+    background-color: white;
+    margin-left: 12%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    box-shadow: 0px 1px #c6c6c6;
+    border-radius: 2px;
+}
+
+.box1_left{
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    box-shadow: 0px 1px #c6c6c6;
+}
+
+.upper_div{
+    display: flex;
+    width: 220px;
+    margin-left:30px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lower_div{
+    display: flex;
+    margin-left: 100px;
+}
+
+.grey_number{
+    background-color: #EDF0F4;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey_text{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 500;
+}
+
+.number{
+    font-size: 12px;
+    color: #3b68d7;
+    font-weight: 500;
+}
+
+.tick{
+    color:#3b68d7;
+    font-weight: 500;
+}
+
+.lower_div{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    z-index: 50;
+}
+
+.username{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact_number{
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.box1_right{
+    display: flex;
+    align-items: center;
+}
+
+.change_btn{
+    border: 1px solid #dfdede;
+    margin-right: 25px;
+    border-radius: 2px;
+}
+
+.change_btn:hover{
+    cursor: pointer;
+}
+
+.btn_text{
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b68d7;
+}
+
+.col2_box1{
+    background-color: white;
+    margin-top: 6%;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.col2_box1_head_text{
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 500;
+}
+
+.col2_box1_head{
+    border: 1px solid #e7e7e7;
+}
+
+.col2_box1_parent_div{
+    border-left: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+}
+
+.box1_content1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 13px 0px;
+}
+
+.box1_content2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 13px 0px;
+}
+
+.box1_content3{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 13px 0px 20px 0px;
+}
+
+.col2_box1_total{
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 1px #c6c6c6;
+}
+
+.col2_box1_total_left{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.col2_box1_total_right{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.box1_content2_right{
+    color: #2E7E2E;
+}
+
+.box1_content3_right{
+    color: #2E7E2E;
+}
+
+.col2_box2{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.offers_head{
+    display: flex;
+    border: 1px solid #e7e7e7;
+}
+
+.offers_head_container{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 20px 10px;
+}
+
+.offers_head_text{
+    color: #2E7E2E;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.offers_row1{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.row1_text{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tnc{
+    color: #3b68d7;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.dropArrow{
+    font-weight: 600;
+    color:#3b68d7;
+}
+
+.viewMore{
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b68d7;
+}
+
+.offers_row4_container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.cardNumber{
+    color: #7e7e7e;
+}
+
+.nftWarranty{
+    background-color: white;
+    margin-left: 12%;
+    margin-top: 3%;
+    box-shadow: 0px 1px #c6c6c6;
+    border-radius: 2px;
+}
+
+.nftWarranty_header{
+    background-color: #3b68d7;
+    border-radius: 2px 2px 0px 0px;
+
+}
+
+.nftWarranty_header_numNtext{
+    display: flex;
+    padding: 15px 15px;
+    margin-left: 15px;
+}
+
+.nftWarranty_header_number{
+    background-color: white;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.nftWarranty_num{
+    font-size: 12px;
+    color: #3b68d7;
+    font-weight: 600;
+    padding: 3px 3px;
+}
+
+.nftWarranty_header_text{
+    color: white;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.nftWarranty_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.button_container{
+    margin: 50px 0px;
+    background-color: #ea572a;
+    border-radius: 35px;
+    box-shadow: 0px 1px #802222;
+}
+
+.button_container:hover{
+    cursor: pointer;
+}
+
+.nftWarranty_btn{
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_container_block1{
+    display: flex;
+    color: rgb(73, 72, 72);
+}
+
+.left_container_block2{
+    color: rgb(73, 72, 72);
+}
+
+.left_container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 7%;
+    padding: 30px 0px;
+    font-size: 14px;
+}
+
+.right_container{
+    margin-right: 7%;
+    font-size: 14px;
+    color:rgb(73, 72, 72);
+}
+
+.right_container span{
+    color: #3b68d7;
+    font-weight: 500;
+}
