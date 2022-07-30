@@ -20,7 +20,7 @@ const WarrantyItem = (props) => {
     const deliveryDate = `${months[date.getMonth()]} ${date.getDate()}`;
 
     return(
-        <div className={classes.outerContainer}>
+        <div onClick={warrantyDetailsHandler} className={classes.outerContainer}>
             <div className={classes.leftContainer}>
                 <div className={classes.nftImage}>
                     <img className={classes.img} src={data.image_url} alt={"nft_image"} width={180} height={180} />

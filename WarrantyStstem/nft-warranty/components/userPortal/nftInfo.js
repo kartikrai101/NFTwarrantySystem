@@ -3,6 +3,7 @@ import Image from 'next/image'; // importing the image component from next libra
 import header_img from '../../components/flipkartCloneUI/Icons/nftLogoGif.gif';
 import {useState, useRef} from 'react'; // importing the useState and useRef hooks
 import gif101 from '../../components/flipkartCloneUI/Icons/gif101.gif';
+import {useRouter} from 'next/router';
 
 import nft2 from '../../components/flipkartCloneUI/Icons/nft2.webp'; // import
 
@@ -14,6 +15,11 @@ const nftInfo = (props) => {
     const lNameRef = useRef();
     const emailRef = useRef();
     const contactRef = useRef();
+    const router = useRouter();
+
+    const knowMoreHandler = () => {
+        router.push('/flipkart/flipkart-digital-warranty');
+    }
 
     const formSubmitHandler  = () => {
         const userData = {
@@ -47,7 +53,7 @@ const nftInfo = (props) => {
                             <li>Get a reminder when your warranty is about to expire</li>
                         </ul>
                     </div>
-                    <div className={classes.knowMoreLink}>
+                    <div onClick={knowMoreHandler} className={classes.knowMoreLink}>
                         Know more about Flipkart Digital Warranty
                     </div>
                 </div>

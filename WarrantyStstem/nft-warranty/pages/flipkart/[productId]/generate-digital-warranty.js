@@ -16,7 +16,7 @@ const GenerateDigitalWarranty = () => {
             }
         });
 
-        router.push('/flipkart');
+        router.push('/flipkart/thanksPage');
     };
 
 

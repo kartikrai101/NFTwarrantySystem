@@ -138,7 +138,12 @@ const Buy = (props) => {
                             <div onClick={generateNftHandler} className={classes.button_container}>
                                 <div className={classes.nftWarranty_btn}>GENERATE DIGITAL WARRANTY FOR MY PRODUCT</div>
                             </div> 
+                            <div className={classes.offersText}>
+                                <div>Generate Digital Warranty and get <span className={classes.digiCoin}>Flipkart DigiCoins</span> on every digital warranty you generate!</div>
+                            </div>
+                            
                         </div>
+                        
                     </div>
                     
                 </div>

@@ -1,3 +1,10 @@
+.receiveWarranty{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+
 .innerContainer{
     display: flex;
     flex-direction: column;
@@ -5,11 +12,26 @@
     align-items: center;
 }
 
+.receiveBtn{
+    background-color: royalblue;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: all 300ms;
+    font-size: 16px;
+}
+.receiveBtn:hover{
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
 
 .searchContainer{
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .container{

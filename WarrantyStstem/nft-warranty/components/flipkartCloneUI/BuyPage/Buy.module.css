@@ -327,6 +327,7 @@
 
 .nftWarranty_content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
@@ -336,11 +337,12 @@
     margin: 50px 0px;
     background-color: #ea572a;
     border-radius: 35px;
-    box-shadow: 0px 1px #802222;
+    transition: all 300ms;
 }
 
 .button_container:hover{
     cursor: pointer;
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 8px;
 }
 
 .nftWarranty_btn{
@@ -382,4 +384,19 @@
 .right_container span{
     color: #3b68d7;
     font-weight: 500;
+}
+
+.offersText{
+    margin-bottom: 20px;
+}
+
+.digiCoin{
+    color: royalblue;
+    font-weight: 500;
+    transition: all 300ms;
+}
+
+.digiCoin:hover{
+    font-size: 17px;
+    cursor: pointer;
 }

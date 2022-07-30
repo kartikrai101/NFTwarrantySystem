@@ -2,11 +2,22 @@ import classes from './DigitalWarrantiesComponent.module.css';
 import WarrantyItem from './WarrantyItem'; // importing the WarrantyItem component
 import Head from 'next/head';
 import { Fragment } from 'react';
+import {useRouter} from 'next/router';
 
 const DigitalWarrantiesComponent = (props) => {
 
+    const router = useRouter();
+    const scanQrCodeHandler = () => {
+        router.push('/flipkart/scan-qr-code');
+    };
+
     return(
             <div className={classes.outerContainer}>
+                <div className={classes.receiveWarranty}>
+                    <div onClick={scanQrCodeHandler} className={classes.receiveBtn}>
+                        Receive a Digital Warranty
+                    </div> 
+                </div>
                 <div className={classes.searchContainer}>
                     <div className={classes.container}>
                         <div className={classes.searchBox}>

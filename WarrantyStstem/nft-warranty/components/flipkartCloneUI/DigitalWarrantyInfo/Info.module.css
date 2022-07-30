@@ -1,0 +1,20 @@
+.header{
+    background-color: black;
+    
+}
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}

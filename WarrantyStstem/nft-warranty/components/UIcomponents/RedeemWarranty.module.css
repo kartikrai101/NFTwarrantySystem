@@ -1,0 +1,114 @@
+.header{
+    background-color: #3b68d7;
+    
+}
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}
+
+.outerContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-right: 15%;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+
+.nftDetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+.productDetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+.productDetailsContainer{
+    margin-top: 50px;
+}
+
+.nftDetails_detail{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productDetails_detail{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.key{
+    font-weight: 500;
+}
+
+.value{
+    color: rgb(99, 96, 96);
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img{
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
+.redeemButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+
+.redeem{
+    color: royalblue;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 300ms;
+}
+
+.redeem:hover{
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.disclaimer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(193, 85, 22);
+    margin-left: 216px;
+    margin-right: 216px;
+    padding: 10px 10px;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 5px;
+}
+
+.disclaimerText{
+    width: 70%;
+    color: white;
+}

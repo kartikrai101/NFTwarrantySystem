@@ -4,6 +4,7 @@
 
 .outerContainer{
     height: 100vh;
+    background-color: rgb(62, 62, 62);
 }   
 
 .header{

@@ -5,7 +5,7 @@ import classes from './style.module.css';
 
 const DUMMY_DETAILS = [
     {
-        image_url: 'https://img.freepik.com/premium-vector/mutant-ape-yacht-club-nft-artwork-collection-set-unique-bored-monkey-character-nfts-variant_361671-259.jpg?w=2000',
+        image_url: 'https://res.cloudinary.com/db0gn6pqi/image/upload/v1658936368/otvivyakwswvcadqghu7.png',
         creation_date: new Date(),
         warranty_period: "12 months",
         product_name: 'HP Core i3 11th Gen (552 SSD/1 TB HDD) Silv...',
@@ -31,7 +31,7 @@ const DUMMY_DETAILS = [
         product_id: 'p1#05421hp&i3',
         nft_name: 'kartFly98432'
     }
-]
+];
 
 const DigitalWarranties = (props) => {
     return(

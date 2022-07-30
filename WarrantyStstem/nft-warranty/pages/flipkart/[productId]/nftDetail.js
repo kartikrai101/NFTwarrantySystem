@@ -4,7 +4,7 @@ import Header from '../../../components/flipkartCloneUI/Header';
 import NftDetailPage from '../../../components/userPortal/NftDetailPage';
 
 const DUMMY_DETAILS = {
-        image_url: 'https://img.freepik.com/premium-vector/mutant-ape-yacht-club-nft-artwork-collection-set-unique-bored-monkey-character-nfts-variant_361671-259.jpg?w=2000',
+        image_url: 'https://res.cloudinary.com/db0gn6pqi/image/upload/v1658936368/otvivyakwswvcadqghu7.png',
         creation_date: new Date(),
         warranty_period: "12 months",
         nft_name: 'kartHP13002',

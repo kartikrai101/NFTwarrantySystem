@@ -1,16 +1,30 @@
 import classes from './NftDetailPage.module.css'; // importing the NftDetail page 
 import date from 'date-and-time'; // importing the third party npm package to manage dates and time
 import { Timer, Time, TimerOptions } from 'timer-node'; // a third party package for managing the timer for expiration of the warranty period
-
+import {useRouter} from 'next/router'; 
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 const NftDetailPage = (props) => {
 
+    const router = useRouter();
+
     const startDay = date.format(props.details.creation_date, 'ddd, MMM DD YYYY');
     const expireDate = date.addMonths(props.details.creation_date, 12);
     const expireDay = date.format(expireDate, 'ddd, MMM DD YYYY');
     const expireDate2 = date.addMonths(props.details.creation_date, -12);
+
+    const generateQrCodeHandler = () => {
+        router.push('/flipkart/generate-qr-code')
+    };
+
+    const scanQrCodeHandler = () => {
+        router.push('/flipkart/scan-qr-code');
+    };
+
+    const redeemWarrantyHandler = () => {
+        router.push('/flipkart/redeemWarranty');
+    }
 
 
     const timer = new Timer({
@@ -91,19 +105,19 @@ const NftDetailPage = (props) => {
                         </div>
                         <div className={classes.rightContainerLower}>
                             <div className={classes.upperButtons}>
-                                <div className={classes.renewBtn}>
+                                <div onClick={generateQrCodeHandler} className={classes.renewBtn}>
                                     <div className={classes.renew}>
-                                        Renew Warranty
+                                        Send Warranty
                                     </div>
                                 </div>
-                                <div className={classes.changeBtn}>
+                                {/* <div onClick={scanQrCodeHandler} className={classes.changeBtn}>
                                     <div className={classes.change}>
-                                        Change Owner
+                                        Receive Warranty
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className={classes.lowerButtons}>
-                                <div className={classes.redeemBtn}>
+                                <div onClick={redeemWarrantyHandler} className={classes.redeemBtn}>
                                     <div className={classes.redeem}>
                                         Redeem Warranty
                                     </div>
