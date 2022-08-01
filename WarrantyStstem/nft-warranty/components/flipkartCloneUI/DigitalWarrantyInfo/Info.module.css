@@ -1,0 +1,43 @@
+.header{
+    background-color: black;
+    
+}
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}
+
+.masterContainer{
+    background-color: black;
+    height: 100vh;
+}
+
+.headerText1{
+    color: royalblue;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.headerText2{
+    color: rgb(28, 124, 165);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.headerText3{
+    color: rgb(30, 192, 241);
+    font-size: 50px;
+    font-weight: 500;
+}

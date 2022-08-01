@@ -2,7 +2,7 @@ import WelcomePage from '../components/sellerPortal/WelcomePage'; // importing t
 
 import {Fragment } from 'react'; 
 
-function DigitalWarrantySystem (){
+function DigitalWarrantySystem (props){
     return(
         <Fragment>
             <WelcomePage />
@@ -10,5 +10,12 @@ function DigitalWarrantySystem (){
         
     );
 };
+
+async function getServerSideProps(context){
+    // collect all the data that is coming from the form using the props and then make
+    // an api call to the database here in order to send and store that data in the database
+
+    
+}
 
 export default DigitalWarrantySystem;

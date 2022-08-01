@@ -1,0 +1,89 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.card{
+    background-color: blue;
+}
+.containerColumn{
+    background-color: green;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.userDataContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.qrcode{
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+.innerContainer{
+    display: flex;
+
+}
+
+.name{
+    display: flex;
+}
+
+.details{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.key{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.value{
+  color: rgb(100, 99, 99);
+}
+
+.userDataContainer{
+    border: 2px solid rgb(170, 169, 169);
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 3px;
+}
+
+.innerContainer{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.header{
+    background-color: #3b68d7;
+    
+}
+
+.header_image{
+    margin-left: 13%;
+    padding: 10px 0px;
+}
+
+.header_explore{
+    font-size: 12px;
+    color: white;
+    display: flex;
+}
+
+.yellow{
+    color: yellow;
+    font-weight: 500;
+}

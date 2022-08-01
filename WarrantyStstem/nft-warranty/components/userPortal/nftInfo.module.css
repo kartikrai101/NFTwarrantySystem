@@ -1,0 +1,131 @@
+.header_img{
+    width: 30%;
+}
+
+.outerContainer{
+    height: 100vh;
+    background-color: rgb(62, 62, 62);
+}   
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_text{
+    color: white;
+    width: 70%;
+}
+
+.header_text_heading{
+    color: rgb(238, 142, 158);
+}
+
+.header_text_content{
+    padding-right: 300px;
+}
+
+.knowMoreLink{
+    color: rgb(120, 114, 230);
+    font-weight: 500;
+    margin-left: 600px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.knowMoreLink:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.form_header{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.formInnerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    width: 70%;
+    padding: 20px 30px;
+}
+
+.formDisplayImage{
+    background-color: black;
+    width: 30%;
+    height: 700px;
+}
+
+.form_content{
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px; 
+}
+
+.inner_content{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper_inps{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lower_inps{
+    display: flex;
+    justify-content: space-around;
+}
+
+.label{
+    font-size: 20px;
+    color:rgb(107, 107, 107);
+}
+
+.input{
+    width: 350px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 15px;
+    border: 1px solid rgb(183, 183, 183);
+    font-size: 17px;
+    color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.check{
+    margin-top: 20px;
+    color:rgb(107, 107, 107);
+    text-align: center;
+}
+
+.lower_inps{
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    font-weight: 700;
+}

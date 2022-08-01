@@ -3,6 +3,10 @@
     background-color: rgb(247, 247, 247);
 } */
 
+.background{
+    background-color: rgb(247, 247, 247) ;
+}
+
 .header{
     padding: 10px 0px 8px 5px;
     margin: 0px 10px;
@@ -40,3 +44,41 @@
     height: 1px;
 }
 
+
+.digitalWarrantyBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories{
+    width: 85%;
+}
+
+.warrantiesBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 4, 4);
+    padding: 15px 20px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+    transition: all 300ms;
+}
+
+.btnContainer:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 0, 0, 0.5) 2px 2px 15px;
+}
+
+.warrantyButton{
+    color: white;
+    font-weight: 500;
+}

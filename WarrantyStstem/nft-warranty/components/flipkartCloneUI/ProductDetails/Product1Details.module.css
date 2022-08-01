@@ -6,6 +6,7 @@
     width: 580px;
 }
 
+
 .outermostContainer{
     display: flex;
     justify-content: space-between;
@@ -36,10 +37,625 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 150px;
 }
 
+.compare{
+    padding: 8px;
+}
+
+.productTitle{
+    margin: 0px;
+    padding: 0px;
+    font-size: 19px;
+}
+
+.ratingBtn{
+    background-color: rgb(21, 126, 21);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 2px 7px;
+    margin-right: 5px;
+}
+
+.ratingsAndReviews{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.row3{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.off{
+    color:rgb(21, 126, 21);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pricing{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 260px; 
+}
+
+.price{
+    font-size: 28px;
+    font-weight: 650;
+}
+
+.wrongPrice{
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.percentageOff{
+    font-size: 16px;
+    color: rgb(21, 126, 21);
+    font-weight: 700;
+}
+
+.flipImage{
+    padding: 7px;
+}
+
+.orBuyAt{
+    font-size: 15px;
+}
+
+.couponsHead{
+    font-size: 16px;
+    font-weight: 520;
+}
+
+.partnerOffer{
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.partner{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.partnerLink{
+    color: #256de1;
+    font-weight: 600;
+}
+.partnerLink:hover{
+    cursor: pointer;
+}
+
+.head{
+    font-size: 16px;
+    font-weight: 520;
+}
+
+.offer1{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer2{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer3{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 25px;
+}
+
+.offer_firstWord{
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+
+.offer_text{
+    font-size: 14px;
+}
+
+.offer_link{
+    color: #256de1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.offer_link:hover{
+    cursor: pointer;
+}
+
+.viewMoreDiv{
+    height: 20px;
+}
+
+.viewMore{
+    color: #256de1;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hpImage{
+    border: 1px solid #757575;
+}
+
+.warrantyAndHighlights{
+    margin-top: 10px;
+}
+
+.warranty{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.warrantyText{
+    display: flex;
+    margin-left: 45px;
+}
+
+.warranty_link{
+    color: #256de1;
+    font-weight: 500;
+
+}
+
+.box1_row1{
+    display: flex;
+    align-items: center;
+}
+
+.theOtherPart{
+    margin-left: 45px;    
+}
+
+.delivery_grey{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.change{
+    margin-left: 140px;
+    font-size: 14px;
+    color: #256de1;
+    font-weight: 500;
+}
+
+.pin{
+    font-weight: 500px;
+    font-size: 14px;
+}
+
+.delivery_row1{
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+    font-size: 13px;
+    height: 20px;
+    font-weight: 600;
+}
+
+.greyLine{
+    color:hsl(0, 0%, 46%);
+}
+
+.greenLink{
+    color:rgb(21, 126, 21);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.delivery_row2{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 12%;
+    height: 20px;
+}
+
+.viewDetails{
+    color: #256de1;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 12%;
+    margin-top: 8px;
+}
+
+.highlights{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.highlights_box1{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.highlights_box2{
+    font-size: 14px;
+    width: 350px;
+
+}
+
+.parentDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.easyPayment{
+    display: flex;
+    margin-top: 10px;
+}
+
+.easyPayment_head{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.easyPayment_box2{
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.seller{
+    display: flex;
+}
+
+.seller_head{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.seller_box2{
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+}
+
+.seller_link{
+    font-size: 14px;
+    color: #256de1;
+    font-weight: 500;
+}
+
+.seller_ul{
+    font-size: 14px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.superCoin{
+    margin-top: 70px;
+    display: flex;
+    align-items: start;
+}
+
+.superCoin_text{
+    font-size: 14px;
+    margin-left: 20px;
+    width: 160px;
+    font-weight: 500;
+}
+
+.super_greyText{
+    color:hsl(0, 0%, 46%);
+}
+
+.protect_your_product{
+    margin-right: 7%;
+}
+
+.protect_head{
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #e3e3e3;
+}
+
+.headerText{
+    padding: 0px 15px;
+}
+
+.digitalSuraksha{
+    border: 1px solid #e3e3e3;
+    display: flex;
+}
+
+.digitalSuraksha_box1{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.digitalSuraksha_image{
+    margin-left: 30px;
+
+}
+
+.digitalSuraksha_box2{
+    margin-left: 30px;
+}
+
+.digitalSuraksha_box2_header{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.digitalSuraksha_text{
+    font-size: 13px;
+}
+
+.digitalSuraksha_grey{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+}
+
+.prc{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.digitalSuraksha_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e3e3e3;
+}
+
+.digitalSuraksha_price_box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    padding-left: 40px;
+}
+
+.digitalSuraksha_grey{
+    color:hsl(0, 0%, 46%);
+}
+
+.digitalSuraksha_value{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.price2{
+    color:hsl(0, 0%, 46%);
+}
+
+.price4{
+    color:hsl(0, 0%, 46%);
+}
+
+.buttonContainer{
+    background-color: #FD8D09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 5px 35px;
+    color: white;
+    font-weight: 600;
+    border-radius: 2px;
+    box-shadow: 0px 1px #e3e3e3;
+}
+
+.buttonContainer:hover{
+    cursor: pointer;
+}
+
+.digitalSuraksha_price_box2{
+    margin-right: 50px;
+}
+
+.specs{
+    outline: 1px solid #efefef;
+    margin-right: 60px;
+    padding: 2px 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 1px;
+}
+
+.specs_box1{
+    border: 1px solid #efefef;
+    border-radius: 1px;
+    margin-right: 60px;
+}
+
+.specs_heading{
+    font-size: 18px;
+    padding: 5px 0px 0px 25px;
+}
+
+.specs_wrapperDiv{
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.specs_col1{
+    color: hsl(0, 0%, 46%);
+    font-size: 14px;
+    padding-left:25px;
+    width: 200px; 
+}
+
+.specs_col2{
+    color: black;
+    font-size: 14px;
+}
+
+.buyTogether{
+    border: 1px solid #efefef;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.buyTogether_container{
+    display: flex;
+    margin-left: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buyTogether_head{
+    padding-left: 25px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.grey_plus{
+    color:hsl(0, 0%, 46%);
+    font-size: 35px;
+}
+
+.inp{
+    width: 18px;
+    height: 18px;
+    margin-left: 30px;
+}
+
+.item1{
+    width: 220px;
+}
+
+.item2{
+    width: 220px;
+}
+
+.item3{
+    width: 220px;
+}
+
+.item_text{
+    font-size: 14px;
+}
+
+.ratingsAndReviews_btn{
+    background-color: rgb(35, 127, 35);
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.ratingsAndReviews_reviews{
+    color:hsl(0, 0%, 46%);
+    margin-left: 7px;
+}
+
+.ratingsAndReviews{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.item_price{
+    display: flex;
+    align-items: center;
+}
+
+.item_price_price{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.item_price_wrong{
+    color:hsl(0, 0%, 46%);
+    font-size: 14px;
+    padding: 0px 7px;
+}
+
+.item_price_off{
+    color:rgb(35, 127, 35);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.alternate_price{
+    font-size: 14px;
+}
+
+.addToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    margin-left: 115px;
+    margin-top: 32%;
+    z-index:99;
+    position: fixed;
+}
+
+.addToCart{
+    background-color: #FD8D09;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 2px;
+    width: 230px;
+    font-weight: 600;
+}
+
+.addToCart:hover{
+    cursor: pointer;
+}
+
+.buy{
+    background-color: #F74D16;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 2px;
+    width: 230px;
+    font-weight: 600;
+}
+
+.buy:hover{
+    cursor: pointer;
+}
+
+
 .leftNode{
-    
+
 }
 
 .rightNode{

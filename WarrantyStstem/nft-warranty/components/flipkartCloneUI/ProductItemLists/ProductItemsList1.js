@@ -10,7 +10,7 @@ import classes from './ProductItemsList.module.css'; // importing the css classe
 const products = [
     {
         src: img1,
-        id: 'p1laptopDesign',
+        id: 'hp6781#i3226',
         alt: "This is the first product of list",
         itemText: 'HP Core i3 11th Gen - (8 GB/256 GB SSD/Windows 11 Home) 14s dy25...',
         rating: '4.3',
