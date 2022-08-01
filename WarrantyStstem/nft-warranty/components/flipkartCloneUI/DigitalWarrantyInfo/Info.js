@@ -17,10 +17,23 @@ const Info = (props) => {
                     </div>
                 </div>
             </div>
+            <hr color="grey" />
 
             <div className={classes.header}>
-                <div className={classes.headerText}>
-                    
+                <div className={classes.headerText1}>
+                    Flipkart  
+                </div>
+                <div className={classes.headerText2}>
+                    Digital
+                </div>
+                <div className={classes.headerText3}>
+                    Warranty System
+                </div>
+            </div>
+
+            <div className={classes.content1}>
+                <div className={classes.content1Text}>
+                    <p>Flipkart Digital Warranty System (FDWS) is a new feature that we are introducing to give our users</p>
                 </div>
             </div>
 

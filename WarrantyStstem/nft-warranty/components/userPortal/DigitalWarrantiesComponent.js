@@ -38,8 +38,11 @@ const DigitalWarrantiesComponent = (props) => {
                         // we will access the array of digital warranties and then for each of 
                         // those warranties we will simply make a WarrantyItem component
                         // and in that component we will pass all the info as props
+                        props.warrantyList.length === 0 ? <h3>Seems link you don't have any digital warranty in your account :(</h3> :
                         props.warrantyList.map((warrantyItem) => {
-                            return (<WarrantyItem warrantyInfo={warrantyItem} />);
+                            return (
+                                <WarrantyItem warrantyInfo={warrantyItem} /> 
+                            );
                         })
                     }
                 </div>
