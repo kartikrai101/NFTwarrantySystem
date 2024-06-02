@@ -1,11 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
 import classes from './nftInfo.module.css'; // imporing the css classes
 import Image from 'next/image'; // importing the image component from next library
 import header_img from '../../components/flipkartCloneUI/Icons/nftLogoGif.gif';
-import {useState, useRef} from 'react'; // importing the useState and useRef hooks
+import {useState, useRef, useEffect, useMemo} from 'react'; // importing the useState and useRef hooks
 import gif101 from '../../components/flipkartCloneUI/Icons/gif101.gif';
 import {useRouter} from 'next/router';
-
-import nft2 from '../../components/flipkartCloneUI/Icons/nft2.webp'; // import
+const { Metaplex, irysStorage, toMetaplexFile, keypairIdentity } = require("@metaplex-foundation/js");
+const { Keypair, Connection, clusterApiUrl, LAMPORTS_PER_SOL } = require("@solana/web3.js");
 
 
 const nftInfo = (props) => {
@@ -17,19 +19,44 @@ const nftInfo = (props) => {
     const contactRef = useRef();
     const router = useRouter();
 
+    const [startMinting, setStartMinting] = useState(false)
+    const [mintingData, setMintingData] = useState({})
+
     const knowMoreHandler = () => {
         router.push('/flipkart/flipkart-digital-warranty');
     }
 
+    useEffect(() => {
+        // Define the async function
+        const fetchData = async () => {
+          try {
+            const response = await fetch('/api/generate-nft', {
+                method: 'POST',
+                body: JSON.stringify(mintingData),
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            })
+          } catch (error) {
+            console.error('Error fetching data:', error)
+          }
+        }
+    
+        // Call the async function
+        fetchData()
+      }, [startMinting, mintingData])
+
     const formSubmitHandler  = () => {
+        setStartMinting(true)
         const userData = {
             first_name: fNameRef.current.value,
             last_name: lNameRef.current.value,
             email: emailRef.current.value,
             contact: contactRef.current.value
-        };
-
-        props.getData(userData); // sending the data to the nftWarrantyPage component
+        }
+        setMintingData(userData)
+        console.log(userData)
+        props.getData(userData) // sending the data to the nftWarrantyPage component
     };
 
     
@@ -70,30 +97,30 @@ const nftInfo = (props) => {
                             <div className={classes.inner_content}>
                                 <div className={classes.upper_inps}>
                                     <div className={classes.f_name}>
-                                        <div className={classes.label}><label for="f_name">First Name</label></div>
+                                        <div className={classes.label}><label htmlFor="f_name">First Name</label></div>
                                         <div><input className={classes.input} name="f_name" ref={fNameRef} type="text" id="f_name" placeholder="" /></div>
                                     </div>
                                     <div className={classes.username}>
-                                        <div className={classes.label}><label for="l_name">Last Name</label></div>
+                                        <div className={classes.label}><label htmlFor="l_name">Last Name</label></div>
                                         <div><input className={classes.input} name="l_name" ref={lNameRef} type="text" id="l_name" placeholder="" /></div>
                                     </div>
                                 </div>
                                 <div className={classes.lower_inps}>
                                     <div className={classes.email}>
-                                        <div className={classes.label}><label for="email">Email</label></div>
+                                        <div className={classes.label}><label htmlFor="email">Email</label></div>
                                         <div><input className={classes.input} name="email" ref={emailRef} id="email" type="email" placeholder="" /></div>                                                            
                                     </div>
                                     <div className={classes.contact}>
-                                        <div className={classes.label}><label for="contact">Contact Number</label></div>
+                                        <div className={classes.label}><label htmlFor="contact">Contact Number</label></div>
                                         <div><input className={classes.input} name="contact" ref={contactRef} id="contact" type="number" placeholder="" /></div>
                                     </div>
                                 </div> 
                                 <div className={classes.check}>
                                     <input type="checkbox" id="check" className={classes.check_input} />
-                                    <label for="check">I hereby give permission to flipkart to create my account on blockchain in order to generate my digital warranty.</label>
+                                    <label htmlFor="check">I hereby give permission to flipkart to create my account on blockchain in order to generate my digital warranty.</label>
                                 </div>
                                 <div onClick={formSubmitHandler} className={classes.btn}>
-                                    Generate
+                                    Generate...
                                 </div>
                                 
                             </div>                            

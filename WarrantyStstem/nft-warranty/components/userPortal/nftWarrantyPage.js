@@ -12,9 +12,7 @@ const nftWarrantyPage = (props) => {
 
     return(
         <Fragment>
-            <Header>
-                <NFTinfo getData={sendData}/>
-            </Header>
+            <NFTinfo getData={sendData}/>
         </Fragment>        
     );
 };

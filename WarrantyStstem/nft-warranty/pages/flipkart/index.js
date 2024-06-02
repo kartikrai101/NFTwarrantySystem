@@ -11,8 +11,6 @@ import ProductItemList1 from '../../components/flipkartCloneUI/ProductItemLists/
 import ProductItemList2 from '../../components/flipkartCloneUI/ProductItemLists/ProductItemsList2';
 import ProductItemList3 from '../../components/flipkartCloneUI/ProductItemLists/ProductItemsList3';
 
-import {MongoClient} from 'mongodb'; 
-
 const Flipkart = (props) => {
 
     const flipkartUser = props.userData;
@@ -81,48 +79,9 @@ const Flipkart = (props) => {
                 <div className={classes.outerContainer}>
                     <ProductItemList3 />
                 </div>
-            </main>
-
-            
-            
-            
+            </main> 
         </div>
     );
 };
-
-export async function getServerSideProps(){
-
-    const testUser = {
-        userId: 'k1012r908#21',
-        username: 'kart1012ai',
-        personalDetails: {
-            contact: '8690625956',
-            email: 'kitrakiar73@gmail.com',
-            f_name: 'Kartik',
-            l_name: 'Rai',
-            address: 'Balaji Boys PG, Begumpur, 110086, Rohini, New Delhi'
-        }
-    };
-
-    const client = await MongoClient.connect('mongodb+srv://kartik:kartik@cluster0.aklsa.mongodb.net/nft?retryWrites=true&w=majority');
-    const db = client.db();
-
-    const collection = db.collection('flipkart_user');
-
-    const deletionPreviousDocuments = await collection.deleteOne({username: 'kart1012ai'});
-    const response = await collection.insertOne(testUser);
-
-    client.close();
-
-    return(
-        {
-            props: {
-                userData: {
-
-                }
-            }
-        }
-    );
-}
 
 export default Flipkart;
